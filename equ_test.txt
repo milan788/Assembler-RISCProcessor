@@ -1,0 +1,29 @@
+.global glob1
+.data
+lok1_data: .skip 5
+glob1: .skip 3
+lok2_data: .skip 2
+.text
+	push r2
+lok1_text:
+	push r2
+	push r2
+lok2_text:
+	push r2
+	push r2[i]
+	push r2
+	push r2
+	push r2
+	push r2
+.equ m , 1 - lok1_text
+.equ n , lok2_text + m
+.equ i, h + c
+.equ h, e - d
+.equ f, b + 2
+.equ e, lok2_text + f
+.equ d, lok1_text - 1
+.equ b, a+3
+.equ c, lok2_text
+.equ g, e + 2
+.equ a, 2
+.end

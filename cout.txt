@@ -1,0 +1,6 @@
+section_test.txt
+   Instr: push
+oper1: r2
+op1am: 1
+o1ams: 2
+-------------------------

@@ -1,0 +1,12 @@
+.text
+	mov r1, 56
+	add r3, *4
+.data
+podatak1:
+a: .skip 5
+b: .word
+niz: .byte
+.bss
+.section sekcija rx
+fja:
+.end

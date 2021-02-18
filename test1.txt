@@ -1,0 +1,35 @@
+.global glob1
+.extern ext1
+.text
+	halt
+	xchg r1, r2
+	int a
+	mov r1, 44
+	         
+	add r3[11], r4
+	mul r5, r6
+	div r3, r4
+	cmp r1, 1
+	
+	not r1
+	and r4[b], 5555
+glob1:
+	or r1, 1
+	xor r1,1
+	test r1, 1
+	shl r1, 2
+	shr r1, 2
+loc1:   push r1
+	pop r1
+	jeq *1001 
+	jne ext1
+	jgt *1001	
+	call $glob1
+	ret 
+	iret
+.data
+a: .skip 5
+b: .align 2
+c: .word 3
+.end
+

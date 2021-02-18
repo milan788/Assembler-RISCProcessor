@@ -1,0 +1,4 @@
+.global glob1
+.text
+	jgt $glob1
+.end

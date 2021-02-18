@@ -1,0 +1,5 @@
+.text
+lab_txt: push r2
+.section .nova, rw
+lab_nova: .byte 0x7f
+.end

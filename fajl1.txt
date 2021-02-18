@@ -1,0 +1,18 @@
+.global glob1
+.text
+	mov r1, glob2
+	push a
+	push b
+	add r3, van_fajla
+	jne $fja
+	push glob1
+.data
+.global glob2
+podatak1:
+a: .skip 5
+b: .word 0
+glob1:
+niz: .byte 0
+.bss
+fja:
+.end
